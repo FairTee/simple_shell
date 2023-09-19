@@ -11,8 +11,7 @@ int main(int on, char **in, char **envir)
 {
 	char *take_input, **rec_input = NULL;
 	int valuation = 0, end = 0, q = 0;
-
-	void(on);
+	(void)on;
 
 	while (1)
 	{

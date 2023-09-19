@@ -12,7 +12,7 @@ int find_executable(char **command, char **envir)
 	size_t find_exec, cmd;
 	struct stat stat_info;
 
-	if (sta(*command, &stat_info) == 0)
+	if (stat(*command, &stat_info) == 0)
 		return (-1);
 	late = net_path_from_env(envir);
 	if (!late)
