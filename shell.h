@@ -15,7 +15,8 @@ extern char **environ;
 
 void shell_exit(char **argument, char *input_line, int exit_code);
 void print_env(char **environ);
-int fork_execute(char **argmt, char **pn, char **envr, char *input, int pid, int cf);
+int fork_execute(char **argmt, char **pn, char **envr,
+		char *input, int pid, int cf);
 int _putchar(char c);
 char *net_path_from_env(char **envir);
 char **tokenize_input(char *input);
